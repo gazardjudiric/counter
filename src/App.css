@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.app {
+    text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.barnCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: auto; */
+    margin-top: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80vh;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 0 5px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card h1 {
+    /* font-size: 10px; */
+    width: 50%;  
+    font-size: 20px;
+    padding: 0;
 }
-
-.App-link {
-  color: #61dafb;
+.cardContent {
+padding: 10px;
+width: 50%;
+background-color: cadetblue;
+margin: 10px 20px 0 0;
 }
+.cardContent input {
+    width: 12rem;
+    height: 30px;
+}
+.CardButtons {
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.CardButtons>:nth-child(1) {
+    background-color: red;
+    border: none;
+    color: white;
+}
+.CardButtons>:nth-child(3) {
+    background-color: green;
+    border: none;
+    color: white;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.cardHistorique {
+    background-color: brown;
+    width: 40%;
+    height: 80vh;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 0 5px 0;
+}
+button {
+    padding: 5px 20px;
 }
